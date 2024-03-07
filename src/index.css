@@ -23,6 +23,38 @@
   z-index: -1;
 }
 
+nav li {
+  position: relative;
+  cursor: pointer;
+}
+
+nav li::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  display: block;
+  background-color: maroon;
+  transition: .2s ease-in-out;
+}
+
+
+nav li:hover:after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: maroon;
+  transition: .2s ease-in-out;
+}
+
+*li {
+  list-style: none;
+}
+
 .buttons:hover:before,
 .buttons:focus:before {
   width: 100%;
@@ -58,4 +90,26 @@
 .gallery-tab:hover img,
 .gallery-tab:focus img {
   transform: scale(1.1);
+}
+
+.contact p {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  transition: .2s ease-in-out;
+}
+
+.contact p:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  display: block;
+  transition: .2s ease-in-out;
+  background-color: black;
+}
+
+.contact p:hover:after {
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import Gallery from "../components/Gallery";
 import Section from "../components/Section";
+import Stitches from "../components/Stitches";
 import TabsContainer from "../components/TabsContainer";
 import StatsHome from "./StatsHome";
 import WhyChooseUs from "./WhyChooseUs";
@@ -26,6 +27,11 @@ export default function Home() {
       </Section>
       <WhyChooseUs />
       <StatsHome />
+      <Stitches
+        title="CONTACT US"
+        head="Get It Done With Us Today"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie. Diam, adipiscing ultrices eu turpis gravida."
+      />
     </>
   );
 }
